@@ -1,0 +1,39 @@
+<!-- PRETEXT OVERVIEW:
+Credential capture.
+$service: Technology portal in use by target organization. Even better if that service uses a subscription model.
+$greeting: Good morning/afternoon/evening, etc.
+$firstname: Target first name.
+$organization: Target organization.
+$date: Date by which your phishing campaign will end.
+$evilurl: URL to cloned portal for $service.
+$signature: Append or replace with internal signature if acquired.
+$name: Target first and last name.
+
+Can be sent as noreply@domain.com
+Make sure to setup the inbox so users can reply to this message.
+-->
+<b>Subject: *Important* Improving Email Security for $service (example: AWS SES)</b>
+<br>
+<br>
+$greeting $firstname,
+<br>
+<br>
+InfoSec and IT have been working closely over the past few months to enhance email security for our branded domains, such as emails sent from @$organization.com. We have been making progress with implementing *DMARC <https://www.valimail.com/blog/what-is-dmarc/>*, which allows us to protect our employees as well as everyone around the world (including customers and partners) from phishing attacks that spoof our branded domains.
+<br>
+Recently we've seen a substantial uptick in phishing attacks that spoof emails from $organization employees in ways that DMARC would prevent from happening.
+<br>
+Because of this, we're accelerating our implementation of DMARC for emails sent from @$organization.com, and we need your help getting DMARC setup for our $service (example: AWS) environments!
+<br>
+*If you have setup $service (example: AWS) to send emails as @$organization.com and other branded domains (@$organization.com, etc.), please follow the requirements/steps defined in our updated $service Security Requirements: SES section <https://$evilurl> to help IT get DMARC setup for these domains.*
+<br>
+*Please complete this before $date - every day we go by without DMARC is another day someone could get phished by spoofed $organization emails!*
+<br>
+Please keep these security requirements in mind if you setup $service in the future to send emails using *any* branded @$organization.com and other branded domains (@$organization.com, etc.). IT will begin enforcing DMARC mid-$date for @$organization.com, which could result in emails not being delivered if your email server/services don't have SPF an DKIM setup.
+<br>
+Thank you,
+<br>
+<br>
+$organization IT
+<br>
+$signature
+<br>
